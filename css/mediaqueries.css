@@ -1,0 +1,180 @@
+@media screen and (max-width: 1050px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 55px;
+  }
+
+  .hero-copy {
+    max-width: 800px;
+  }
+
+  .hero-visual {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .code-window {
+    max-width: 600px;
+  }
+
+  .hero-badge {
+    right: calc(50% - 310px);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-image-wrap {
+    justify-content: flex-start;
+  }
+
+  .about-copy {
+    max-width: 850px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .site-nav,
+  .section-shell,
+  footer {
+    width: min(100% - 32px, var(--max-width));
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 45px 0 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4.4rem);
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-visual {
+    min-height: 330px;
+  }
+
+  .code-window {
+    transform: none;
+  }
+
+  .code-content {
+    padding: 22px 12px;
+    overflow-x: auto;
+  }
+
+  .hero-badge {
+    right: -3px;
+    bottom: 5px;
+  }
+
+  .content-section {
+    padding: 85px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .section-heading h2,
+  .contact-panel h2 {
+    font-size: 2.35rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-height: auto;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+
+  .project-body p:not(.project-index) {
+    min-height: auto;
+  }
+
+  .project-heading {
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .contact-section {
+    padding: 80px 0 100px;
+  }
+
+  .contact-panel {
+    padding: 32px 24px;
+  }
+
+  footer {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero {
+    padding-top: 35px;
+  }
+
+  .hero h1 {
+    font-size: 2.65rem;
+  }
+
+  .btn-container .btn {
+    width: 100%;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+
+  .code-content {
+    font-size: 0.58rem;
+  }
+
+  .line-number {
+    width: 20px;
+    margin-right: 8px;
+  }
+
+  .hero-badge {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: -25px 0 0 auto;
+  }
+
+  .image-frame {
+    width: 85%;
+  }
+}

@@ -1,0 +1,250 @@
+﻿@page
+@model Projectfile.Pages.quizzesModel
+@{
+    ViewData["Title"] = "quizzes";
+}
+<link href="~/css/style.css" rel="stylesheet" />
+<h1> Ankylosaurus </h1>
+
+<form method="post">
+    <ol>
+        <!--Question One-->
+        <li>What is the height of Ankylosaurus?</li>
+        <label style="color:@Model.Msg1Color">@Model.answerMsg1</label>
+        <br />
+        <input type="radio" asp-for="question1" value="7m" /> 7m
+        <br />
+        <input type="radio" asp-for="question1" value="4m" /> 4m
+        <br />
+        <input type="radio" asp-for="question1" value="10m" /> 10m
+        <br />
+        <br />
+
+        <!--Question Two-->
+        <li>What is the weight of Ankylosaurus?</li>
+        <label style="color:@Model.Msg2Color">@Model.answerMsg2</label>
+        <br />
+        <input type="radio" asp-for="question2" value="5-4 tones" /> 5-4 tones
+
+        <br />
+        <input type="radio" asp-for="question2" value="5-7 tones" /> 5-7 tones
+        <br />
+        <input type="radio" asp-for="question2" value="4-8 tones" /> 4-8 tones
+        <br />
+        <br />
+
+        <!-- Question Three -->
+        <li>Ankylosaurus has been found in north west USA and in Canada.</li>
+        <label style="color:@Model.Msg3Color">@Model.answerMsg3</label>
+        <br />
+        <input type="radio" asp-for="question3" value="True" /> True
+
+        <br />
+        <input type="radio" asp-for="question3" value="False" />False
+        <br />
+        <br />
+
+
+
+        <hr />
+
+        <h1> Dilophosaurus </h1>
+
+
+        <!--Question 4 -->
+        <li>What does dilphosaurs mean?</li>
+        <label style="color:@Model.Msg4Color">@Model.answerMsg4</label>
+        <br />
+        <input type="radio" asp-for="question4" value="Strong" /> Strong
+        <br />
+        <input type="radio" asp-for="question4" value="Double" /> Double-Crested Lizard
+        <br />
+        <input type="radio" asp-for="question4" value="Reptile" /> Double-Crested Reptile
+        <br />
+        <br />
+
+        <!--Question 5-->
+        <li>How tall is dilophosaurus?</li>
+        <label style="color:@Model.Msg5Color">@Model.answerMsg5</label>
+        <br />
+        <input type="radio" asp-for="question5" value="5m" /> 5m
+
+        <br />
+        <input type="radio" asp-for="question5" value="14m" /> 14m
+        <br />
+        <input type="radio" asp-for="question5" value="7m"/> 7m
+        <br />
+        <br />
+
+        <!-- Question 6 -->
+        <li>Where does the name Dilophosaurus came from? </li>
+        <label style="color:@Model.Msg6Color">@Model.answerMsg6</label>
+        <br />
+        <input type="radio" asp-for="question6" value="Greek" /> Greek
+        <br />
+        <input type="radio" asp-for="question6" value="English" />English
+        <br />
+        <input type="radio" asp-for="question6" value="Latin" />Latin
+
+        <br />
+        <br />
+        <hr />
+ <h1>Diplodocus</h1>
+ <!--Question 7-->
+ <li>  What is the structure of  diplodocus </li>
+ <label style="color:@Model.Msg7Color">@Model.answerMsg7</label>
+ <br />
+ <input type="radio" asp-for="question7" value="long neck, small head, and whip-like tail" /> long neck, small head, and whip-like tail
+ <br/>
+<input type="radio" asp-for="question7" value="long neck" /> long neck
+ <br />
+ <input type="radio" asp-for="question7" value=" small head" />  small head
+ <br>
+ <!--Question 8-->
+ <li> What are diplodocus food habit  </li>
+ <label style="color:@Model.Msg8Color">@Model.answerMsg8</label>
+ <br />
+ <input type="radio" asp-for="question8" value="Herbivore" /> Herbivore
+ <br>
+
+ <input type="radio" asp-for="question8" value="Carnivore" /> Carnivore
+ <br>
+
+ <input type="radio" asp-for="question8" value="Omnivore" /> Omnivore
+ <br>
+ <!--Question 9 -->
+ <li> Was  Mesozoic era the era for the Diplodocus?  </li>
+ <label style="color:@Model.Msg9Color">@Model.answerMsg9</label>
+ <br />
+ <input type="radio" asp-for="question9" value="True " /> True
+ <br/>
+
+ <input type="radio" asp-for="question9" value="False " />  False
+ <br/>
+
+
+ <h1>Spinosaurus</h1>
+
+ <!--Question 10-->
+ <li>Where did Spinosaurus live ? </li>
+ <label style="color:@Model.Msg10Color">@Model.answerMsg10</label>
+ <br />
+ <input type="radio" asp-for="question10" value="riverine and coastal regions" /> riverine and coastal regions
+ <br />
+ <input type="radio" asp-for="question10" value="mountains regions" /> mountains regions
+ <br />
+ <input type="radio" asp-for="question10" value="coastal regions" /> coastal regions
+ <br />
+ <br />
+
+ <!--Question 11-->
+ <li> What type of environment did it inhabit?</li>
+ <label style="color:@Model.Msg11Color">@Model.answerMsg11</label>
+ <br />
+ <input type="radio" asp-for="question11" value="semi aquatic habitats" /> semi aquatic habitats
+
+ <br />
+ <input type="radio" asp-for="question11" value="forest habitats" /> forest habitats
+ <br />
+ <input type="radio" asp-for="question11" value="desert habitats" /> desert habitats
+ <br />
+ <br />
+
+ <!-- Question 12 -->
+ <li>Did it spend much of its time in water </li>
+ <label style="color:@Model.Msg12Color">@Model.answerMsg12</label>
+ <br />
+ <input type="radio" asp-for="question12" value="True" /> True
+ <br />
+ <input type="radio" asp-for="question12" value="False" />False
+ <br />
+ <br />
+
+        <h1>Byronosaurus</h1>
+        <!--Question 13-->
+        <li>What does the Name Byronosaurus mean?</li>
+        <label style="color:@Model.Msg13Color">@Model.answerMsg13</label>
+        <br />
+        <input type="radio" asp-for="question13" value="byron" /> Byron
+        <br />
+        <input type="radio" asp-for="question13" value="jaffe" /> Jaffe
+        <br />
+        <input type="radio" asp-for="question13" value="Byron Lizard" /> Byron Lizard
+        <br />
+        <br />
+
+        <!--Question 14-->
+        <li>What are Byronosaurus teeth like?</li>
+        <label style="color:@Model.Msg14Color">@Model.answerMsg14</label>
+        <br />
+        <input type="radio" asp-for="question14" value="straight" /> Straight
+
+        <br />
+        <input type="radio" asp-for="question14" value="sharp" /> sharp
+        <br />
+        <input type="radio" asp-for="question14" value="All" /> All of the Above
+        <br />
+        <br />
+
+        <!-- Question 15 -->
+        <li>Do Byronosaurus lay eggs?</li>
+        <label style="color:@Model.Msg15Color">@Model.answerMsg15</label>
+        <br />
+        <input type="radio" asp-for="question15" value="True" /> True
+
+        <br />
+        <input type="radio" asp-for="question15" value="False" /> False
+        <br />
+        <br />
+
+
+
+        <hr />
+
+        <h1> Tyrannosaurus Rex </h1>
+
+
+        <!--Question 16 -->
+        <li>
+            What Is a Tyrannosaurus rex diet like?
+        </li>
+        <label style="color:@Model.Msg16Color">@Model.answerMsg16</label>
+        <br />
+        <input type="radio" asp-for="question16" value="plant" /> Plants
+        <br />
+        <input type="radio" asp-for="question16" value="vegan" /> Veggies
+        <br />
+        <input type="radio" asp-for="question16" value="meat" /> Carnivorous
+        <br />
+        <br />
+
+        <!--Question 17-->
+        <li>What is a Tyrannosaurus rex's speed?</li>
+        <label style="color:@Model.Msg17Color">@Model.answerMsg17</label>
+        <br />
+        <input type="radio" asp-for="question17" value="27 km/h" /> 27 km/h
+
+        <br />
+        <input type="radio" asp-for="question17" value="63 km/h" /> 63 km/h
+        <br />
+        <input type="radio" asp-for="question17" value="72 km/h" /> 72 km/h
+        <br />
+        <br />
+
+        <!-- Question 18 -->
+        <li>How much does a Tyrannosaurus rex weigh? </li>
+        <label style="color:@Model.Msg18Color">@Model.answerMsg18</label>
+        <br />
+        <input type="radio" asp-for="question18" value="700kg" /> 700 kg
+        <br />
+        <input type="radio" asp-for="question18" value="7kg" /> 7 kg
+        <br />
+        <input type="radio" asp-for="question18" value="7000kg" /> 7,000 kg
+        <br />
+        <br />
+
+        <input type="submit" asp-page-handler="Submit" value="Submit" />
+    </ol>
+    <label style="color: @Model.MsgColor">@Model.msgScore</label> 
+</form>
+

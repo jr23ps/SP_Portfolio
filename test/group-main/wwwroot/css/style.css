@@ -1,0 +1,85 @@
+﻿body {
+    /*Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%2*/
+    background-image: linear-gradient(to right,#384B70, gray, #384B70 );
+    W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ background-color:
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+header nav .container {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.nav-link {
+    background-color: #9694FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin: 5px;
+    font-weight: bold;
+}
+
+    .nav-link:hover {
+        background-color: #6A42C2;
+    }
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.section {
+    width:60%;
+    margin: auto;
+}
+
+p {
+    font-family: arial;
+    line-height: 25px;
+    letter-spacing: .6px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+ol {
+    font-family: arial;
+    line-height: 20px;
+    letter-spacing: .6px;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+img {
+    width: 100%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+
+.sources {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    padding: .7em;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+h4 {
+    color: rgba(255, 255, 255, 0.541);
+}

@@ -1,0 +1,104 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link href="~/css/style.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+            height: 100vh;
+        }
+
+        .column {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            width:400px;
+            height: 300px;
+            margin: 10px;
+        }
+
+        .imgs {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+    p span {
+           
+            font-weight: bold;
+        }
+
+        a {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            background-color: gray;
+            padding: 5px;
+            border-radius: 5px;
+            color: beige
+        }
+
+            a:hover {
+                color: aliceblue;
+                background-color: #444343;
+            }
+    </style>
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="column col1">
+            <p><span>Name:</span> Henok</p>
+
+            <a asp-page="/Ankylozurs">Ankylosaurus </a>
+            <a asp-page="/Dilophosaurus">Dilophosaurus </a>
+           
+            <img class="imgs" src="https://www.hoo-zoo.com/wp-content/uploads/2022/10/Ankylosaurus-magniventris-1600x909-1-1200x682.jpeg"
+                 alt="">
+            <img class="imgs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Dilophosaurus_in_bird-like_resting_pose.jpg/220px-Dilophosaurus_in_bird-like_resting_pose.jpg"
+                 alt="">
+        </div>
+
+        <div class="column col2">
+            <p><span>Name:</span> Dominique</p>
+             <a asp-page="/Diplodocus">Diplodocus </a>
+            <a asp-page="/Spinosaurus">Spinosaurus </a>
+            
+           
+            <img class="imgs" src="https://www.prehistoric-wildlife.com/wp-content/uploads/diplodocus-size.jpg"
+                 alt="">
+            <img class="imgs" src="https://cdn.britannica.com/54/128854-050-F5C98A54/Spinosaurus.jpg"
+                 alt="">
+        </div>
+
+
+        <div class="column col3">
+            <p><span>Name:</span> Smith</p>
+            <a href="/Tyrannosaurusrex">T-REX</a>
+            <a href="/Byronosaurus">Byronosaurus</a>
+            <img class="imgs" src="https://img.freepik.com/premium-vector/side-profile-realistic-line-drawing-entire-trex-body-thin-stroke-no-shadow-trex_764382-213597.jpg?w=826"
+                 alt="dragon">
+            <img class="imgs" src="https://images.dinosaurpictures.org/byronosaurus_by_pavelriha-d5goel1_c566.jpg"
+                 alt="lion">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

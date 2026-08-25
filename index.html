@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smith Pompilus Jr. — Web Developer & Software Builder." />
+  <title>Smith Pompilus Jr. | Web Developer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+  <div class="background-grid"></div>
+
+  <nav id="desktop-nav" class="site-nav">
+    <a class="logo" href="#profile">SMITH<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav" class="site-nav">
+    <a class="logo" href="#profile">SMITH<span>.</span></a>
+    <div class="hamburger-menu">
+      <button class="hamburger-icon" aria-label="Open navigation menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="profile" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+        <p class="hero-kicker">WEB DEVELOPER &amp; SOFTWARE BUILDER</p>
+        <h1>Building <span>software</span> that solves real problems.</h1>
+        <p class="hero-description">
+          I build web applications, APIs, database-driven systems, and software
+          solutions using modern programming and development tools.
+        </p>
+
+        <div class="btn-container">
+          <a class="btn btn-primary" href="#projects">View My Work <span>↗</span></a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+
+        <div id="socials-container" class="social-links">
+          <a href="https://github.com/jr23ps?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="code-window">
+          <div class="window-bar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>developer.js</span>
+          </div>
+          <div class="code-content">
+            <p><span class="line-number">01</span><span class="purple">const</span> developer = {</p>
+            <p><span class="line-number">02</span>&nbsp;&nbsp;name: <span class="green">"Smith Pompilus Jr."</span>,</p>
+            <p><span class="line-number">03</span>&nbsp;&nbsp;role: <span class="green">"Web Developer"</span>,</p>
+            <p><span class="line-number">04</span>&nbsp;&nbsp;focus: [</p>
+            <p><span class="line-number">05</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Web Apps"</span>,</p>
+            <p><span class="line-number">06</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"APIs"</span>,</p>
+            <p><span class="line-number">07</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Databases"</span></p>
+            <p><span class="line-number">08</span>&nbsp;&nbsp;],</p>
+            <p><span class="line-number">09</span>&nbsp;&nbsp;learning: <span class="blue">true</span></p>
+            <p><span class="line-number">10</span>};</p>
+          </div>
+        </div>
+        <div class="hero-badge">AAS<br /><span>Web Development</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell content-section">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Who I am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="image-frame">
+            <img src="./assets/pic.PNG" alt="Smith Pompilus Jr." />
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="lead">
+            I'm a web developer with an Associate of Applied Science in Web
+            Programming &amp; Development.
+          </p>
+          <p>
+            I enjoy building applications, APIs, and database-driven systems
+            that turn ideas into working software. My projects have given me
+            experience working across front-end development, backend logic,
+            databases, and APIs.
+          </p>
+          <p>
+            I also enjoy solving problems independently—researching unfamiliar
+            technologies, understanding how systems work, and finding practical
+            ways to improve an application.
+          </p>
+
+          <div class="about-stats">
+            <div>
+              <strong>AAS</strong>
+              <span>Web Development</span>
+            </div>
+            <div>
+              <strong>Full Stack</strong>
+              <span>Web + Backend</span>
+            </div>
+            <div>
+              <strong>SQL</strong>
+              <span>Database Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-shell content-section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / SKILLS</p>
+        <h2>What I work with</h2>
+        <p>Technologies I've used across projects, coursework, and development work.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-number">01</span>
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">02</span>
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>Bootstrap</li>
+            <li>Node.js</li>
+            <li>ASP.NET</li>
+            <li>Responsive Design</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">03</span>
+          <h3>Databases</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>Microsoft SQL Server</li>
+            <li>Google Cloud SQL</li>
+            <li>Amazon Aurora</li>
+            <li>Relational Design</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-number">04</span>
+          <h3>Tools &amp; APIs</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Visual Studio</li>
+            <li>VS Code</li>
+            <li>REST APIs</li>
+            <li>API Integration</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell content-section">
+      <div class="section-heading project-heading">
+        <div>
+          <p class="eyebrow">03 / PROJECTS</p>
+          <h2>Things I've built</h2>
+        </div>
+        <a class="text-link" href="https://github.com/jr23ps?tab=repositories" target="_blank" rel="noopener noreferrer">View GitHub ↗</a>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+          <div class="project-image">
+            <img src="./assets/RA.png" alt="Ravens project preview" />
+            <span class="project-tag">Web Application</span>
+          </div>
+          <div class="project-body">
+            <p class="project-index">PROJECT / 01</p>
+            <h3>Ravens Fan Project</h3>
+            <p>
+              An entertainment-focused web project built around the Baltimore
+              Ravens, giving fans a place to explore team information and content.
+            </p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://smithpompilus.com/PMT/app/" target="_blank" rel="noopener noreferrer">Live Demo <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="./assets/WS.png" alt="Web game project preview" />
+            <span class="project-tag">Interactive</span>
+          </div>
+          <div class="project-body">
+            <p class="project-index">PROJECT / 02</p>
+            <h3>Interactive Web Game</h3>
+            <p>
+              A browser-based game project demonstrating interactive front-end
+              development and user interaction.
+            </p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="project-link" href="https://smithpompilus.com/webscript/project/new/hi/" target="_blank" rel="noopener noreferrer">Live Demo <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="./assets/WL.png" alt="Wellness project preview" />
+            <span class="project-tag">Information</span>
+          </div>
+          <div class="project-body">
+            <p class="project-index">PROJECT / 03</p>
+            <h3>Wellness Website</h3>
+            <p>
+              An information-focused website designed to organize and present
+              health and wellness resources in a clear interface.
+            </p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>Web Design</span></div>
+            <a class="project-link" href="https://smithpompilus.com/webscript/GroupProject/index.html" target="_blank" rel="noopener noreferrer">Live Demo <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="./assets/SP.png" alt="Dinosaur project preview" />
+            <span class="project-tag">Web Project</span>
+          </div>
+          <div class="project-body">
+            <p class="project-index">PROJECT / 04</p>
+            <h3>Dinosaur Project</h3>
+            <p>
+              An interactive project built around dinosaur information and
+              user-friendly presentation.
+            </p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <span class="project-link disabled">Demo unavailable</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <div class="contact-panel">
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2>Let's build something.</h2>
+        <p>
+          I'm open to opportunities, projects, and conversations about
+          technology and software development.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:smittypjr@gmail.com">Email Me ↗</a>
+          <a class="btn btn-secondary" href="https://github.com/jr23ps?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+
+        <p class="contact-email">smittypjr@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#profile">SMITH<span>.</span></a>
+    <p>© 2026 Smith Pompilus Jr. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

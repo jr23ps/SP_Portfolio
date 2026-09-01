@@ -612,6 +612,24 @@ a {
   transform: scale(1.035);
 }
 
+.project-status {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 2;
+
+  padding: 6px 9px;
+  border: 1px solid rgba(114, 230, 162, 0.35);
+  border-radius: 7px;
+  background: rgba(6, 9, 14, 0.88);
+
+  color: var(--green);
+  font-family: "Space Mono", monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .project-tag {
   position: absolute;
   left: 15px;
